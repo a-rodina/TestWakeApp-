@@ -1,0 +1,300 @@
+.games {
+    padding-bottom: 64px;
+    position: relative;
+}
+
+.games::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg_contact.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.games__title {
+    font-size: $_title;
+    color: $_white;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 5px;
+}
+
+.games__block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.games__block::before {
+    content: '';
+    width: 475px;
+    height: 475px;
+    background-image: url(../img/image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: -64px;
+    right: 0;
+    z-index: 1;
+
+    @media(max-width: 993px) {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+.games__text {
+    font-size: $_text;
+    color: $_white;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.games__link {
+    font-size: $_text;
+    color: $_white;
+    font-weight: 500;
+    line-height: 19px;
+    border-bottom: 1px solid $_white;
+}
+
+.games__wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+    width: 100%;
+
+    @media(max-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+}
+
+.div6 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.div7 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.div8 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.div9 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 6;
+    grid-row-start: 1;
+}
+
+.div10 {
+    grid-column: span 4 / span 4;
+    grid-row-start: 2;
+}
+
+.games__wrap-left-item {
+    width: 160px;
+    height: 160px;
+    text-align: start;
+    margin-bottom: 16px;
+
+}
+
+.games__wrap-left-image {
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 6px;
+    border-radius: 16px;
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.games__game-name {
+    font-size: $_text;
+    color: $_white;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.games__game-desc {
+    font-size: $_small_text;
+    color: $_white;
+    font-weight: 200;
+    line-height: 15px;
+}
+
+.games__wrap-right-first-item {
+    width: 248px;
+    height: 160px;
+    background-image: url(../img/DynamiteRichesMW_BigWin_385x190.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    padding: 16px 12px;
+}
+
+.games__wrap-right-second-item {
+    width: 248px;
+    height: 160px;
+    background-image: url(../img/GOTM_GatorGold_385x190.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    padding: 16px 12px;
+}
+
+.games__wrap-right-bottom {
+    width: 512px;
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+}
+
+.right-title {
+    width: 132px;
+    margin-bottom: 5px;
+    font-size: $_text;
+    color: $_white;
+    font-weight: 400;
+}
+
+.right-text {
+    display: block;
+    width: 162px;
+    font-size: $_extra_small;
+    color: $_white;
+    margin-bottom: 16px;
+    font-weight: 100;
+}
+
+.right-link {
+    display: block;
+    line-height: 22px;
+    width: 68px;
+    background-color: #4870FF;
+    font-size: $_extra_small;
+    color: $_white;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 17px;
+}
+
+.games__wrap-right-bottom-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.games__right-bottom-link {
+    width: 81px;
+    background-color: #4870FF;
+    font-size: $_extra_small;
+    color: $_white;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 17px;
+}
+
+.games__wrap-content {
+    display: block;
+    width: 655px;
+    font-size: $_desc;
+    color: $_white;
+    font-weight: 200;
+    margin-bottom: 74px;
+
+    @media(max-width: 993px) {
+        width: 100%;
+        margin-bottom: 54px;
+    }
+}
+
+.contact-form{
+    width: 400px;
+    margin-top: 24px;
+    position: relative;
+    z-index: 10;
+
+    @media(max-width: 500px) {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        height: 128px;
+        margin-bottom: 11px;
+        resize: none;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 16px;
+    }
+    textarea::placeholder {
+        font-size: $_text;
+        font-family: 'Roboto Flex';
+    }
+}
+
+.contact-form-input {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    line-height: 44px;
+    padding: 0 16px;
+    border-radius: 8px;
+}
+
+.contact-form-input::placeholder {
+    font-size: $_text;
+}
+
+.contact-form__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-form__btn {
+    display: block;
+    width: 124px;
+    line-height: 36px;
+    color: $_white;
+    background-image: linear-gradient(90deg, #FA00FF, #4870FF);
+    border-radius: 8px;
+}

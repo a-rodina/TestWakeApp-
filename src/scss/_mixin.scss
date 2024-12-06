@@ -1,0 +1,7 @@
+@mixin background ($imgpath,$position:0 0,$repeat: no-repeat) {
+    background: {
+        image: url(../img/notfound_bg21.png);
+        position: $position;
+        repeat: $repeat;
+    }
+}

@@ -1,0 +1,245 @@
+.awesome {
+    padding: 54px 0;
+}
+
+.awesome::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg_hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.awesome__main-title {
+    color: $_white;
+    font-size: $_main_title;
+    text-transform: uppercase;
+    width: 586px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+
+    @media(max-width: 640px) {
+        width: 100%;
+        font-size: $_title;
+    }
+}
+
+.awesome__text {
+    display: block;
+    color: $_white;
+    font-size: $_sub_title;
+    text-transform: capitalize;
+    width: 389px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 24px;
+
+    @media(max-width: 640px) {
+        width: 100%;
+        font-size: $_small_title;
+    }
+}
+
+.awesome__buttons-block {
+    width: 336px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 59px;
+
+    @media(max-width: 640px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    a {
+        display: block;
+        width: 160px;
+        line-height: 44px;
+        border-radius: 8px;
+        border: 2px solid $_white;
+        color: $_white;
+        font-weight: 600;
+        text-align: center;
+        text-transform: capitalize;
+
+        @media(max-width: 640px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    button {
+        width: 160px;
+        line-height: 44px;
+        border-radius: 8px;
+        background-image: linear-gradient(90deg, #FA00FF, #4870FF);
+        color: $_white;
+        font-weight: 600;
+        text-align: center;
+        text-transform: capitalize;
+    }
+}
+
+.awesome__account-block {
+    padding: 18px 16px 10px;
+    width: 864px;
+    background-image: linear-gradient(45deg, rgb(79, 89, 124, 0.5), rgb(123, 135, 175, 0.5), rgb(63, 72, 105, 0.5));
+    backdrop-filter: blur(5px);
+    border-radius: 16px;
+    border: 1px solid #3A4054;
+    margin: auto;
+
+    @media(max-width: 993px) {
+        width: 100%;
+    }
+}
+
+.awesome__account-block-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.awesome__account-block-title {
+    text-transform: uppercase;
+    color: $_white;
+    width: 331px;
+    font-size: $_small_title;
+    font-weight: 700;
+
+    @media(max-width: 597px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.awesome__account-block-content {
+    display: flex;
+    justify-content: space-between;
+    width: 377px;
+    align-items: center;
+
+    @media(max-width: 440px) {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.awesome__content-block {
+    display: flex;
+    width: 115px;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width: 597px) {
+        width: 100%;
+    }
+}
+
+.awesome__content-block-image {
+    height: 36px;
+    width: 36px;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+}
+
+.awesome__content-block-text {
+    width: 77px;
+    font-size: $_small_text;
+    font-weight: 200;
+    text-transform: capitalize;
+    color: $_white;
+
+    @media(max-width: 597px) {
+        width: 80%;
+    }
+}
+
+.awesome__account-block-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.awesome__account-item {
+    width: 202px;
+    line-height: 44px;
+    border-radius: 8px;
+    background-color: $_white;
+    padding: 0 14px;
+
+    @media(max-width: 993px) {
+        width: 150px;
+        line-height: 35px;
+        margin: 0 3px 5px;
+    }
+
+    @media(max-width: 597px) {
+        width: 100%;
+    }
+}
+
+.awesome__account-item::placeholder {
+    text-transform: capitalize;
+    font-size: $_text;
+}
+
+.e-mail {
+    width: 220px;
+
+    @media(max-width: 993px) {
+        width: 200px;
+    }
+    @media(max-width: 597px) {
+        width: 100%;
+    }
+}
+
+.button {
+    width: 160px;
+    line-height: 44px;
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, #FA00FF, #4870FF);
+    color: $_white;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+
+    @media(max-width: 993px) {
+        width: 150px;
+        line-height: 35px;
+    }
+    @media(max-width: 597px) {
+        width: 100%;
+    }
+}
+
+.check {
+    width: 14px;
+    height: 14px;
+    background-color: $_white;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.check-text {
+    color: $_white;
+    font-size: $_desc;
+    font-weight: 200;
+    text-transform: capitalize;
+}
